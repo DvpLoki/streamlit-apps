@@ -146,6 +146,14 @@ footer = """
     <a href='https://github.com/DvpLoki'><h6>GitHub</h6></a>
 </div>
 """
+
+st.write(footer, unsafe_allow_html=True)
+
+hide_st_style="""
+            <style>
+            #MainMenu {visibility:hidden;}
+            footer {visibility:hidden;}
+            header {visibility:hidden;}
+            </style>
+            """
 st.markdown(hide_st_style,unsafe_allow_html=True)
-
-

@@ -131,18 +131,21 @@ with st.form('Enter car details'):
 
 
 
-footer="""
-<br><p> Made by  Devarapu Lokesh </p>
-<a href='https://www.linkedin.com/in/devarapu-lokesh-99057225a'>linkedin</a><br><a href='https://github.com/DvpLoki'>Github</a>"""
+footer = """
+<style>
+    .footer-table {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+</style>
 
-st.markdown(footer,unsafe_allow_html=True)
-hide_st_style="""
-            <style>
-            #MainMenu {visibility:hidden;}
-            footer {visibility:hidden;}
-            header {visibility:hidden;}
-            </style>
-            """
+<div class="footer-table">
+    <h4>Made with &#10084; by Devarapu Lokesh</h4>
+    <a href='https://www.linkedin.com/in/devarapu-lokesh-99057225a'><h6>LinkedIn</h6></a>
+    <a href='https://github.com/DvpLoki'><h6>GitHub</h6></a>
+</div>
+"""
 st.markdown(hide_st_style,unsafe_allow_html=True)
 
 

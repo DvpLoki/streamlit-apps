@@ -4,6 +4,9 @@ import time,string,nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 ps=PorterStemmer()
+nltk.download('punkt')
+nltk.download('stopwords')
+
 
 st.set_page_config(page_title="Email/sms Spam classifier",page_icon=":envelope_with_arrow:",layout="wide")
 
